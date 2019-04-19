@@ -1,8 +1,5 @@
-# Write your code here.
-
-  def dictionary
+def dictionary
 dictionary = {
-  "hello" => "hi"
   "too" => "2",
   "to" => "2",
   "two" =>"2",
@@ -15,6 +12,16 @@ dictionary = {
 }
 end
 
+# You can use regex or, check out the solution below that
+# def word_substituter(tweet)
+#   tweet = tweet.dup
+#   dictionary.each do |word, replacement|
+#     if tweet.include?(word)
+#       tweet.gsub!(/\b#{word}\b/i, replacement)
+#     end
+#   end
+#   tweet
+# end
 
 
 def word_substituter(tweet)
@@ -47,5 +54,4 @@ def shortened_tweet_truncator(tweet)
   else
     tweet
   end
-end
 end
